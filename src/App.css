@@ -1,0 +1,254 @@
+@font-face {
+  font-family:'Herculanum';
+  src: url(/Herculanum/herculanum-opentype_bigfontsite.com.otf);
+}
+
+@font-face {
+  font-family:'Laila';
+  src: url(/laila/Laila-Regular.ttf), format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family:'Laila';
+  src: url(/laila/Laila-Light.ttf), format("truetype");
+  font-weight: lighter;
+}
+@font-face {
+  font-family:'Laila';
+  src: url(/laila/Laila-SemiBold.ttf), format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family:'Laila';
+  src: url(/laila/Laila-Bold.ttf),format("truetype");
+  font-weight: bolder;
+}
+
+
+ @keyframes rotation{
+  0% {transform: rotate(-360deg);}
+}
+
+@keyframes rotation2{
+  0% {transform: rotate(360deg);}
+}  
+
+
+body{
+  font-family: 'Herculanum';
+  max-height: fit-content;
+  padding: 0;
+  margin: 0;
+  overflow-x:hidden;
+}
+html{
+  font-size: 16px;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  margin: 0;
+}
+
+
+.App {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: white;
+  max-height: fit-content;
+  padding: 1rem;
+  margin: 0;
+}
+
+
+.img{
+  margin: auto;
+  height: 18vmin;
+animation: rotation2 15s infinite linear
+}
+
+.earth{
+  height: 15vmin;
+}
+
+.water{
+  height: 17vmin;
+}
+
+.air{
+  height: 17vmin;
+}  
+
+.bendings{
+display: grid;
+padding: 3rem 0rem;
+gap: 5vmin;
+grid-template-columns: repeat(2,auto);
+justify-content: center;
+animation: rotation 15s infinite linear
+}
+
+
+
+.start-section{
+  font-family: 'Herculanum';
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  max-height: 100vh;
+}
+
+.start-section h1{
+  margin: 0 auto;
+  margin-top: .75rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  font-size: 8vmin;
+  padding: 0;
+  text-align: center;
+  width: 18ch;
+  line-height: 8vmin;
+  word-spacing: 1vmin;
+  font-family: 'Herculanum';
+}
+
+button{
+  font-family: 'Laila';
+  font-weight: 500;
+  color: black;
+  font-size: 3.25vmin;
+  border: none;
+  letter-spacing: .5vmin;
+  padding: 2vmin 4.5vmin;
+  margin: 1rem;
+  border-radius: 5vmin;
+}
+button:hover{
+  cursor: pointer;
+}
+
+.question-section{
+  
+  min-height: 100%;
+  padding: .75rem 0rem;
+  font-family: 'Laila';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.question-count{
+  font-size: 4vmin;
+
+}
+
+.question-text{
+  font-weight: bold;
+  font-size: 5vmin;
+  max-width: 85vmin;
+  text-align: center;
+  justify-content: center;
+  hyphens: none;
+  margin: .5rem 0rem;
+}
+
+.answer-section{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+
+.answer{
+  display: block;
+  font-size: 4vmin;
+  font-weight: 500;
+  margin: 0rem 1rem;
+  border-radius: 2vmin;
+  min-width: 35ch;
+  max-width: 95vmin;
+  text-align: start;
+  letter-spacing: .25vmin;
+  hyphens: auto;
+  padding: 2vmin 3vmin;
+  border: none;
+}
+
+.result-section{
+  height: fit-content;
+  font-family: 'Herculanum';
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  margin: 0rem auto;
+}
+.resultImg{
+  max-width: 15vmin;
+  margin-top: 1rem;
+}
+.result-section h2{
+  margin: .75rem 0rem 0.2rem 0rem;
+  padding: 0;
+  font-size: 4vmin;
+}
+.result-section h1{
+  margin: auto;
+  font-size: 7.25vmin;
+  max-width: 21ch;
+  padding-bottom: .75rem;
+}
+
+.result-section p{
+  font-family: 'Laila';
+  font-weight: normal;
+  margin: 0em auto;
+  padding:0rem .25rem;
+  font-size: 4vmin;
+  max-width: 61ch ;
+  text-align: justify;
+  word-spacing: .15rem;
+  line-height: 5.40vmin;
+}
+
+.resultGif{
+  margin: 0 auto;
+  margin-top: 2rem;
+  width:90vmin;
+  height: 40vmin;
+  padding: 0em;
+}
+
+.btn{
+  margin-top: 2rem;
+}
+
+
+@media (width > 62em) {
+
+  
+
+/* 
+  .bendings{
+    padding: 3rem 0rem;
+    gap: 2rem;
+    }
+
+  .img{
+    margin: auto;
+    height: 7em;
+  animation: rotation2 15s infinite linear
+  }
+   
+  .earth{
+    height: 6.25rem;
+  }
+  
+  .water{
+    height: 6.75rem;
+  }
+  
+  .air{
+    height: 6.5rem;
+  }  */
+}
